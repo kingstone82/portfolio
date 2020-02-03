@@ -12,12 +12,12 @@
 
 <INPUT type="text" id="name2" onfocus="focusFunction(this.id)" onblur="blurFunction(this.id)"><br/>
 
-<INPUT type="text" id="name3" onfocus="focusFunction(this.id)" dbClick="dblClickFunction(this.id)">
+<INPUT type="text" id="name3" ondblClick="dblClickFunction(this.id)">
 </form>
  <script type="text/javascript"> 
 var button = document.getElementById('myButton');
 button.addEventListener('click', function() { 
-document.write('button clicked!'); 
+document.write('button clicked!');  
 }); 
  
  function dblClickFunction(x) {
@@ -27,9 +27,11 @@ document.write('button clicked!');
 	 	document.getElementById(x).style.background = "white";
 	 }
 	 }
+ 
 	 function focusFunction(x) {
 	     document.getElementById(x).style.background = "yellow";
 	 }
+	 
 	 function blurFunction(x) {
 	     document.getElementById(x).style.background = "red";
 	 }
