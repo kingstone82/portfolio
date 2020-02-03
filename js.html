@@ -5,9 +5,19 @@
 </head>
  <body> 
 <button id="myButton">Click me</button>
- <script> var button = document.getElementById('myButton'); button.addEventListener('click', function() { 
-document.write('button clicked!’); 
+<INPUT type = "button" value = "배경색 변경" onClick="document.bgColor='red';">
+
+<INPUT type="text" id="name1" onfocus="focusFunction(this.id)">
+
+<INPUT type="text" id="name2" onfocus="focusFunction(this.id)" onblur="blurFunction(this.id)">
+
+<INPUT type="text" id="name2" onfocus="focusFunction(this.id)" onblur="blurFunction(this.id)">
+
+ <script> var button = document.getElementById('myButton');
+ button.addEventListener('click', function() { 
+document.write('button clicked!'); 
 }); 
+
 </script> 
 </body> 
 </html>
