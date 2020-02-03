@@ -17,6 +17,19 @@
  button.addEventListener('click', function() { 
 document.write('button clicked!'); 
 }); 
+ function dblClickFunction(x) {
+	 if(document.getElementById(x).style.background == "white"){
+	 	document.getElementById(x).style.background = "green";
+	 }else{
+	 	document.getElementById(x).style.background = "white";
+	 }
+	 }
+	 function focusFunction(x) {
+	     document.getElementById(x).style.background = "yellow";
+	 }
+	 function blurFunction(x) {
+	     document.getElementById(x).style.background = "red";
+	 }
 
 </script> 
 </body> 
