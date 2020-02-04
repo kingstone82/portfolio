@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
 <meta charset="UTF-8">
-<title>J-Query 제이쿼리 </title>
-
-
+<title>J-Query 제이쿼리</title>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
 <body>
-<h1>test1</h1>
-<h1 id="hid">test2</h1>
-<h1 name="hname">test3</h1>
-<h1 class="hcls">test4</h1>
+	<h1>test1</h1>
+	<h1 id="hid">test2</h1>
+	<h1 name="hname">test3</h1>
+	<h1 class="hcls">test4</h1>
 </body>
 
 <script>
-	$(document).ready(function(){
-/* 		$("h1").css("color","red"); */
-		$("#hid").css("color","orange");
-		$("h1[name=hname]").css("color","yellow");
-		$(".hcls").css("color","green");
+	$(document).ready(function() {
+		$("h1").css("color","red");
+		$("#hid").css("color", "orange");
+		$("h1[name=hname]").css("color", "yellow");
+		$(".hcls").css("color", "green");
 	});
 </script>
 </html>
