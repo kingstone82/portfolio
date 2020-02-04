@@ -2,10 +2,13 @@
  <head>
  <meta charset="UTF-8">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- <script> $(document).ready(function() {
-$("tr:odd").css("background", "white"); 
-$("tr:even").css("background", "#d9d9d9"); 
-$("tr:first").css("background", "#000000").css("color", "#ffffff");
+ <script> 
+ $(document).ready(function() {
+ $("tr:eq(9)").css("background", "#000000").css("color", "#ffffff");
+ $("td:nth-child(3n+1)").css("background", "gray"); 
+ ${"td:nth-child(3n+2)").css("background", "yellow");
+ });
+ }
 </script>
  </head>
  <body>
